@@ -4,7 +4,7 @@ import com.macro.mall.common.config.BaseRedisConfig;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Redis相关配置
+ * Redis related configuration
  * Created by macro on 2020/6/19.
  */
 @Configuration
