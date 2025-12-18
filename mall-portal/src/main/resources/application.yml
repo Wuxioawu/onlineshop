@@ -28,12 +28,12 @@ spring:
       port: 6379 # Redis server port
       password: wupeng # Redis server password (default is empty)
       timeout: 3000ms # Connection timeout (milliseconds)
-  rabbitmq:
-    host: localhost
-    port: 5672
-    virtual-host: /mall
-    username: wupeng
-    password: wupeng
+  # rabbitmq:
+    # host: localhost
+    # port: 5672
+    # virtual-host: /mall
+    # username: wupeng
+    # password: wupeng
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
@@ -61,10 +61,10 @@ redis:
   expire:
     authCode: 90 # Auth code expiration time
     common: 86400 # 24 hours
-rabbitmq:
-  queue:
-    name:
-      cancelOrder: cancelOrderQueue
+#rabbitmq:
+  #queue:
+    #name:
+      #cancelOrder: cancelOrderQueue
 springdoc:
   swagger-ui:
     # Customize Swagger UI path
