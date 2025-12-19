@@ -80,7 +80,7 @@ springdoc:
     enabled: true
   group-configs:
     - group: 'mall-portal'
-      packages-to-scan: com.macro.mall.portal.controller
+      packages-to-scan: com.peng.sms.portal.controller
 sa-token:
   # Token name (also used as cookie name)
   token-name: Authorization

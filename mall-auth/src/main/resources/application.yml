@@ -1,0 +1,38 @@
+server:
+  port: 8401
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #Expose Actuator monitoring endpoints
+  endpoint:
+    health:
+      show-details: always #Show detailed health information
+    env:
+      show-values: always #By default Actuator environment variables are shown as ****, enable display here
+    configprops:
+      show-values: always #By default Actuator configuration properties are shown as ****, enable display here
+    info:
+      enabled: true
+springdoc:
+  swagger-ui:
+    # Modify Swagger UI path
+    path: /swagger-ui.html
+    # Enable Swagger UI interface
+    enabled: true
+    tags-sorter: alpha
+    operations-sorter: alpha
+    show-extensions: true
+  api-docs:
+    # Modify api-docs path
+    path: /v3/api-docs
+    # Enable api-docs
+    enabled: true
+  group-configs:
+    - group: 'default'
+      packages-to-scan: com.peng.sms.auth.controller
+  default-flat-param-object: false

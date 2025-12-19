@@ -107,13 +107,13 @@
             </dependency>
             <!--mall通用模块-->
             <!--            <dependency>-->
-            <!--                <groupId>com.macro.mall</groupId>-->
+            <!--                <groupId>com.peng.sms</groupId>-->
             <!--                <artifactId>mall-common</artifactId>-->
             <!--                <version>${mall-common.version}</version>-->
             <!--            </dependency>-->
             <!--            &lt;!&ndash;mall中MBG生成模块&ndash;&gt;-->
             <!--            <dependency>-->
-            <!--                <groupId>com.macro.mall</groupId>-->
+            <!--                <groupId>com.peng.sms</groupId>-->
             <!--                <artifactId>mall-mbg</artifactId>-->
             <!--                <version>${mall-mbg.version}</version>-->
             <!--            </dependency>-->

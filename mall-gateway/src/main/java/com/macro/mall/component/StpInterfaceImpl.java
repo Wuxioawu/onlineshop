@@ -1,9 +1,9 @@
-package com.macro.mall.component;
+package com.peng.sms.component;
 
 import cn.dev33.satoken.stp.StpInterface;
 import cn.dev33.satoken.stp.StpUtil;
-import com.macro.mall.common.constant.AuthConstant;
-import com.macro.mall.common.dto.UserDto;
+import com.peng.sms.common.constant.AuthConstant;
+import com.peng.sms.common.dto.UserDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.macro.mall.config;
+package com.peng.sms.config;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

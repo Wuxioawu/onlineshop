@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.macro.mall.portal.dao.PortalOrderDao">
+<mapper namespace="com.peng.sms.portal.dao.PortalOrderDao">
     <resultMap id="orderDetailMap" type="com.peng.sms.domain.OmsOrderDetail"
                extends="com.peng.sms.mapper.OmsOrderMapper.BaseResultMap">
         <collection property="orderItemList" columnPrefix="ot_"

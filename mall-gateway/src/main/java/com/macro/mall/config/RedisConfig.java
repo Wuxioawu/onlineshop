@@ -1,6 +1,6 @@
-package com.macro.mall.config;
+package com.peng.sms.config;
 
-import com.macro.mall.common.config.BaseRedisConfig;
+import com.peng.sms.common.config.BaseRedisConfig;
 import org.springframework.context.annotation.Configuration;
 
 /**

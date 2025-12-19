@@ -1,4 +1,4 @@
-package com.macro.mall.config;
+package com.peng.sms.config;
 
 import cn.dev33.satoken.context.SaHolder;
 import cn.dev33.satoken.exception.NotLoginException;
@@ -10,9 +10,9 @@ import cn.dev33.satoken.router.SaRouter;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.convert.Convert;
-import com.macro.mall.common.api.CommonResult;
-import com.macro.mall.common.constant.AuthConstant;
-import com.macro.mall.util.StpMemberUtil;
+import com.peng.sms.common.api.CommonResult;
+import com.peng.sms.common.constant.AuthConstant;
+import com.peng.sms.util.StpMemberUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
