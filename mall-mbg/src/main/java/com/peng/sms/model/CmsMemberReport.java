@@ -7,20 +7,20 @@ import java.util.Date;
 public class CmsMemberReport implements Serializable {
     private Long id;
 
-    @Schema(title = "举报类型：0->商品评价；1->话题内容；2->用户评论")
+    @Schema(title = "Report type: 0 -> Product review; 1 -> Topic content; 2 -> User comment")
     private Integer reportType;
 
-    @Schema(title = "举报人")
+    @Schema(title = "Reporting member")
     private String reportMemberName;
 
     private Date createTime;
 
     private String reportObject;
 
-    @Schema(title = "举报状态：0->未处理；1->已处理")
+    @Schema(title = "Report status: 0 -> Unprocessed; 1 -> Processed")
     private Integer reportStatus;
 
-    @Schema(title = "处理结果：0->无效；1->有效；2->恶意")
+    @Schema(title = "Handling result: 0 -> Invalid; 1 -> Valid; 2 -> Malicious")
     private Integer handleStatus;
 
     private String note;

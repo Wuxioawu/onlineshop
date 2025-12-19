@@ -8,10 +8,10 @@ public class CmsTopicCategory implements Serializable {
 
     private String name;
 
-    @Schema(title = "分类图标")
+    @Schema(title = "Category icon")
     private String icon;
 
-    @Schema(title = "专题数量")
+    @Schema(title = "Number of topics")
     private Integer subjectCount;
 
     private Integer showStatus;

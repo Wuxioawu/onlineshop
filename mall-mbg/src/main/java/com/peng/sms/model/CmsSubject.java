@@ -11,10 +11,10 @@ public class CmsSubject implements Serializable {
 
     private String title;
 
-    @Schema(title = "专题主图")
+    @Schema(title = "Main image of the subject")
     private String pic;
 
-    @Schema(title = "关联产品数量")
+    @Schema(title = "Number of associated products")
     private Integer productCount;
 
     private Integer recommendStatus;
@@ -27,18 +27,18 @@ public class CmsSubject implements Serializable {
 
     private Integer commentCount;
 
-    @Schema(title = "画册图片用逗号分割")
+    @Schema(title = "Album images separated by commas")
     private String albumPics;
 
     private String description;
 
-    @Schema(title = "显示状态：0->不显示；1->显示")
+    @Schema(title = "Display status: 0 -> Hidden; 1 -> Visible")
     private Integer showStatus;
 
-    @Schema(title = "转发数")
+    @Schema(title = "Number of forwards")
     private Integer forwardCount;
 
-    @Schema(title = "专题分类名称")
+    @Schema(title = "Subject category name")
     private String categoryName;
 
     private String content;

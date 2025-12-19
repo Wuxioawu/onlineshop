@@ -14,44 +14,46 @@ public class OmsCartItem implements Serializable {
 
     private Long memberId;
 
-    @Schema(title = "购买数量")
+    @Schema(title = "Purchase quantity")
     private Integer quantity;
 
-    @Schema(title = "添加到购物车的价格")
+    @Schema(title = "Price when added to the shopping cart")
     private BigDecimal price;
 
-    @Schema(title = "商品主图")
+    @Schema(title = "Main product image")
     private String productPic;
 
-    @Schema(title = "商品名称")
+    @Schema(title = "Product name")
     private String productName;
 
-    @Schema(title = "商品副标题（卖点）")
+    @Schema(title = "Product subtitle (selling point)")
     private String productSubTitle;
 
-    @Schema(title = "商品sku条码")
+    @Schema(title = "Product SKU code")
     private String productSkuCode;
 
-    @Schema(title = "会员昵称")
+    @Schema(title = "Member nickname")
     private String memberNickname;
 
-    @Schema(title = "创建时间")
+    @Schema(title = "Creation time")
     private Date createDate;
 
-    @Schema(title = "修改时间")
+    @Schema(title = "Last modification time")
     private Date modifyDate;
 
-    @Schema(title = "是否删除")
+    @Schema(title = "Delete status")
     private Integer deleteStatus;
 
-    @Schema(title = "商品分类")
+    @Schema(title = "Product category")
     private Long productCategoryId;
 
     private String productBrand;
 
     private String productSn;
 
-    @Schema(title = "商品销售属性:[{'key':'颜色','value':'颜色'},{'key':'容量','value':'4G'}]")
+    @Schema(
+        title = "Product sales attributes, e.g. [{'key':'Color','value':'Red'},{'key':'Capacity','value':'4G'}]"
+    )
     private String productAttr;
 
     private static final long serialVersionUID = 1L;
