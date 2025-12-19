@@ -7,15 +7,15 @@ import java.util.Date;
 public class OmsOrderReturnReason implements Serializable {
     private Long id;
 
-    @Schema(title = "退货类型")
+    @Schema(title = "Return reason")
     private String name;
 
     private Integer sort;
 
-    @Schema(title = "状态：0->不启用；1->启用")
+    @Schema(title = "Status: 0 -> Disabled; 1 -> Enabled")
     private Integer status;
 
-    @Schema(title = "添加时间")
+    @Schema(title = "Creation time")
     private Date createTime;
 
     private static final long serialVersionUID = 1L;

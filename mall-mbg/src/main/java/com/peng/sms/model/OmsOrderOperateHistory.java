@@ -7,19 +7,22 @@ import java.util.Date;
 public class OmsOrderOperateHistory implements Serializable {
     private Long id;
 
-    @Schema(title = "订单id")
+    @Schema(title = "Order ID")
     private Long orderId;
 
-    @Schema(title = "操作人：用户；系统；后台管理员")
+    @Schema(title = "Operator: member, system, or administrator")
     private String operateMan;
 
-    @Schema(title = "操作时间")
+    @Schema(title = "Operation time")
     private Date createTime;
 
-    @Schema(title = "订单状态：0->待付款；1->待发货；2->已发货；3->已完成；4->已关闭；5->无效订单")
+    @Schema(
+        title = "Order status: 0 -> Pending payment; 1 -> Pending shipment; 2 -> Shipped; " +
+                "3 -> Completed; 4 -> Closed; 5 -> Invalid"
+    )
     private Integer orderStatus;
 
-    @Schema(title = "备注")
+    @Schema(title = "Remark")
     private String note;
 
     private static final long serialVersionUID = 1L;

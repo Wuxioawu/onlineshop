@@ -8,82 +8,84 @@ import java.util.Date;
 public class OmsOrderReturnApply implements Serializable {
     private Long id;
 
-    @Schema(title = "订单id")
+    @Schema(title = "Order ID")
     private Long orderId;
 
-    @Schema(title = "收货地址表id")
+    @Schema(title = "Company address ID")
     private Long companyAddressId;
 
-    @Schema(title = "退货商品id")
+    @Schema(title = "Returned product ID")
     private Long productId;
 
-    @Schema(title = "订单编号")
+    @Schema(title = "Order number")
     private String orderSn;
 
-    @Schema(title = "申请时间")
+    @Schema(title = "Application time")
     private Date createTime;
 
-    @Schema(title = "会员用户名")
+    @Schema(title = "Member username")
     private String memberUsername;
 
-    @Schema(title = "退款金额")
+    @Schema(title = "Refund amount")
     private BigDecimal returnAmount;
 
-    @Schema(title = "退货人姓名")
+    @Schema(title = "Returner name")
     private String returnName;
 
-    @Schema(title = "退货人电话")
+    @Schema(title = "Returner phone")
     private String returnPhone;
 
-    @Schema(title = "申请状态：0->待处理；1->退货中；2->已完成；3->已拒绝")
+    @Schema(
+        title = "Application status: 0 -> Pending; 1 -> Returning; 2 -> Completed; 3 -> Rejected"
+    )
     private Integer status;
 
-    @Schema(title = "处理时间")
+    @Schema(title = "Handling time")
     private Date handleTime;
 
-    @Schema(title = "商品图片")
+    @Schema(title = "Product image")
     private String productPic;
 
-    @Schema(title = "商品名称")
+    @Schema(title = "Product name")
     private String productName;
 
-    @Schema(title = "商品品牌")
+    @Schema(title = "Product brand")
     private String productBrand;
 
-    @Schema(title = "商品销售属性：颜色：红色；尺码：xl;")
+    @Schema(title = "Product sales attributes, e.g. Color: Red; Size: XL")
     private String productAttr;
 
-    @Schema(title = "退货数量")
+    @Schema(title = "Returned quantity")
     private Integer productCount;
 
-    @Schema(title = "商品单价")
+    @Schema(title = "Product unit price")
     private BigDecimal productPrice;
 
-    @Schema(title = "商品实际支付单价")
+    @Schema(title = "Actual paid unit price")
     private BigDecimal productRealPrice;
 
-    @Schema(title = "原因")
+    @Schema(title = "Reason")
     private String reason;
 
-    @Schema(title = "描述")
+    @Schema(title = "Description")
     private String description;
 
-    @Schema(title = "凭证图片，以逗号隔开")
+    @Schema(title = "Proof images, separated by commas")
     private String proofPics;
 
-    @Schema(title = "处理备注")
+    @Schema(title = "Handling remark")
     private String handleNote;
 
-    @Schema(title = "处理人员")
+    @Schema(title = "Handler")
     private String handleMan;
 
-    @Schema(title = "收货人")
+    @Schema(title = "Receiver")
     private String receiveMan;
 
-    @Schema(title = "收货时间")
+    @Schema(title = "Receiving time")
     private Date receiveTime;
 
-    @Schema(title = "收货备注")
+    @Schema(title = "Receiving remark")
     private String receiveNote;
 
     private static final long serialVersionUID = 1L;

@@ -6,19 +6,19 @@ import java.io.Serializable;
 public class OmsOrderSetting implements Serializable {
     private Long id;
 
-    @Schema(title = "秒杀订单超时关闭时间(分)")
+    @Schema(title = "The closing time for flash sale orders due to timeout (minutes)")
     private Integer flashOrderOvertime;
 
-    @Schema(title = "正常订单超时时间(分)")
+    @Schema(title = "Normal order timeout time (minutes)")
     private Integer normalOrderOvertime;
 
-    @Schema(title = "发货后自动确认收货时间（天）")
+    @Schema(title = "The delivery time (in days) will be automatically confirmed after shipment.")
     private Integer confirmOvertime;
 
-    @Schema(title = "自动完成交易时间，不能申请售后（天）")
+    @Schema(title = "The transaction time is automatically completed. After-sales service (days) cannot be applied for.")
     private Integer finishOvertime;
 
-    @Schema(title = "订单完成后自动好评时间（天）")
+    @Schema(title = "The time for automatic positive review after order completion (in days)")
     private Integer commentOvertime;
 
     private static final long serialVersionUID = 1L;
